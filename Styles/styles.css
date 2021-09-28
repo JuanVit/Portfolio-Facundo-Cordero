@@ -298,6 +298,59 @@ html {
   }
 }
 
+#about-me {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1a1a1a;
+}
+
+#about-me .about-me__container {
+  width: 80%;
+  margin: 0% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about-me .about-me__container .about-me__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+}
+
+#about-me .about-me__container .about-me__text p {
+  color: rgba(238, 238, 238, 0.6);
+  font-size: 2rem;
+  text-align: inherit;
+}
+
+#about-me .about-me__container .about-me__img-container {
+  width: 40%;
+  height: 450px;
+  background-color: rgba(152, 28, 235, 0.3);
+  border-radius: 50% 20% 50% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #portfolio {
   background-color: #1a1a1a;
   display: -webkit-box;
@@ -363,5 +416,13 @@ html {
 #portfolio .portfolio-container .gallery-container .portfolio__item img:hover {
   -webkit-filter: grayscale(80%);
   filter: grayscale(80%);
+}
+
+@media only screen and (max-width: 760px) {
+  #portfolio .portfolio-container .gallery-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0.5%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
