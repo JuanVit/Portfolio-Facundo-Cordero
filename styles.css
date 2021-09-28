@@ -151,7 +151,7 @@ html {
 }
 
 #about {
-  background-image: url(https://images.pexels.com/photos/1980870/pexels-photo-1980870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(assets/image-banner.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -199,15 +199,17 @@ html {
   padding: 2rem;
   background-color: transparent;
   border: solid 0.5px rgba(34, 34, 34, 0.7);
-  color: rgba(255, 255, 255, 0.6);
   font-size: 2rem;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   cursor: pointer;
+  color: #981CEB;
+  border: solid .5px #981ceb;
 }
 
 #about .about-content .presentation button:hover {
-  background-color: #981CEB;
+  background-color: #981ceb;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 #about .about-content .photo-presentation {

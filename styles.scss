@@ -104,8 +104,8 @@ html{
 
 
 #about{
-    background-image: url(https://images.pexels.com/photos/1980870/pexels-photo-1980870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-position: center;
+    background-image: url(assets/image-banner.jpeg);
+    background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -138,12 +138,14 @@ html{
                 padding: 2rem;
                 background-color: transparent;
                 border:solid .5px rgba(34, 34, 34,.7);
-                color: rgba(255, 255, 255,.6);
                 font-size: 2rem;
                 transition: all .5s ease;
                 cursor: pointer;
+                color: #981CEB;
+                border: solid .5px #981ceb;
                 &:hover{
-                    background-color: #981CEB;
+                    background-color:#981ceb;
+                    color:rgba(255, 255, 255,.6) ;
                 }
             }
         }
