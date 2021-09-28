@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -7,7 +8,7 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header-top {
@@ -58,7 +59,7 @@ html {
 
 .header-top nav ul li a {
   text-decoration: none;
-  color: #e2dede;
+  color: rgba(226, 222, 222, 0.9);
   font-weight: bold;
   font-size: 1.6rem;
   -webkit-transition: all 0.3s ease;
@@ -66,10 +67,11 @@ html {
 }
 
 .header-top nav ul li a:hover {
-  color: #981CEB;
+  color: white;
 }
 
 .header-scroll {
+  z-index: 2;
   height: 8rem;
   box-shadow: 0px 2px 0px -1px rgba(21, 21, 21, 0.24);
   -webkit-box-shadow: 0px 2px 0px -1px rgba(21, 21, 21, 0.24);
@@ -86,7 +88,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -164,7 +166,6 @@ html {
   width: 80%;
   margin: auto;
   height: 100vh;
-  padding: 9rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +175,7 @@ html {
 }
 
 #about .about-content .presentation {
-  width: 50%;
+  width: 100%;
 }
 
 #about .about-content .presentation h1 {
@@ -183,8 +184,9 @@ html {
 }
 
 #about .about-content .presentation h1 span {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 7rem;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 8.2rem;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   letter-spacing: 0rem;
@@ -209,21 +211,35 @@ html {
 
 #about .about-content .presentation button:hover {
   background-color: #981ceb;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
-#about .about-content .photo-presentation {
-  width: 50%;
+@media only screen and (max-width: 760px) {
+  #about .presentation h1 {
+    line-height: 5rem;
+  }
+  #about .presentation h1 span {
+    font-size: 3.2rem !important;
+  }
 }
 
 #portfolio {
-  height: 200px;
-  background-color: #313131;
+  height: 100vh;
+  background-color: #1a1a1a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+#portfolio .portfolio-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 0%;
+  padding-top: 8%;
+}
+
+#portfolio .portfolio-container .title-portfolio {
+  font-size: 3rem;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

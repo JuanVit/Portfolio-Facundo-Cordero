@@ -1,12 +1,13 @@
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header-top{
@@ -36,12 +37,12 @@ html{
                 padding: 1rem;
                 a{
                     text-decoration: none;
-                    color: rgb(226, 222, 222);
+                    color: rgba(226, 222, 222, .9);
                     font-weight: bold;
                     font-size: 1.6rem;
                     transition: all 0.3s ease;
                     &:hover{
-                    color: #981CEB;
+                    color: white;
                 }
                 }
             }
@@ -49,6 +50,7 @@ html{
     }
 }
 .header-scroll{
+    z-index: 2;
     height: 8rem;
     box-shadow: 0px 2px 0px -1px rgba(21,21,21,0.24);
     -webkit-box-shadow: 0px 2px 0px -1px rgba(21,21,21,0.24);
@@ -60,7 +62,7 @@ html{
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .8);
     transition: all .5s ease ;
     nav{
         display: flex;
@@ -115,17 +117,17 @@ html{
     width: 80%;
     margin: auto;
     height: 100vh;
-    padding: 9rem 3rem;
     display: flex;
     align-items: center;
         .presentation{
-            width: 50%;
+            width: 100%;
             h1{
                 line-height: 8.7rem;
                 letter-spacing: 2px;
                 span{
-                    color: rgba(255, 255, 255,.6);
-                    font-size: 7rem;
+                    display: inline-block;
+                    color: rgba(255, 255, 255,.7);
+                    font-size: 8.2rem;
                     transition: all .5s ease;
                     letter-spacing: 0rem;
                     cursor:default;
@@ -145,19 +147,35 @@ html{
                 border: solid .5px #981ceb;
                 &:hover{
                     background-color:#981ceb;
-                    color:rgba(255, 255, 255,.6) ;
+                    color:rgba(255, 255, 255, .8) ;
                 }
             }
         }
-        .photo-presentation{
-            width: 50%;
-        }
+    }
+    @media only screen and (max-width:760px){
+            .presentation{
+                h1{
+                    line-height: 5rem;
+                    span{
+                        font-size: 3.2rem !important;
+                    }
+                }
+            }
     }
 }
 
 #portfolio{
-    height: 200px;
-    background-color: rgb(49, 49, 49);
+    height: 100vh;
+    background-color: rgb(26, 26, 26);
     display: flex;
-    justify-content: center;
+    .portfolio-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 0%;
+        padding-top: 8% ;
+        .title-portfolio{
+            font-size: 3rem;
+            color: white;
+        }
+    }
 }
