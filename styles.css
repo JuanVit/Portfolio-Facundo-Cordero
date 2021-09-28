@@ -1,0 +1,227 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.header-top {
+  height: 9rem;
+  box-shadow: 0px 2px 0px -1px rgba(85, 85, 85, 0.24);
+  -webkit-box-shadow: 0px 2px 0px -1px rgba(21, 21, 21, 0.24);
+  -moz-box-shadow: 0px 2px 0px -1px rgba(21, 21, 21, 0.24);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.header-top nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-top nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header-top nav ul li {
+  padding: 1rem;
+}
+
+.header-top nav ul li a {
+  text-decoration: none;
+  color: #e2dede;
+  font-weight: bold;
+  font-size: 1.6rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header-top nav ul li a:hover {
+  color: #981CEB;
+}
+
+.header-scroll {
+  height: 8rem;
+  box-shadow: 0px 2px 0px -1px rgba(21, 21, 21, 0.24);
+  -webkit-box-shadow: 0px 2px 0px -1px rgba(21, 21, 21, 0.24);
+  -moz-box-shadow: 0px 2px 0px -1px rgba(21, 21, 21, 0.24);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.header-scroll nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-scroll nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-scroll nav div a {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.header-scroll nav div a:hover {
+  color: #981CEB;
+}
+
+.header-scroll nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header-scroll nav ul li {
+  padding: 1rem;
+}
+
+.header-scroll nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header-scroll nav ul li a:hover {
+  color: #981CEB;
+}
+
+#about {
+  background-image: url(https://images.pexels.com/photos/1980870/pexels-photo-1980870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+#about .about-content {
+  height: 1500px;
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  padding: 9rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .about-content .presentation {
+  width: 50%;
+}
+
+#about .about-content .presentation h1 {
+  line-height: 8.7rem;
+  letter-spacing: 2px;
+}
+
+#about .about-content .presentation h1 span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 7rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  letter-spacing: 0rem;
+  cursor: default;
+}
+
+#about .about-content .presentation h1 span:hover {
+  color: #981CEB;
+}
+
+#about .about-content .presentation button {
+  padding: 2rem;
+  background-color: transparent;
+  border: solid 0.5px rgba(34, 34, 34, 0.7);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+#about .about-content .presentation button:hover {
+  background-color: #981CEB;
+}
+
+#about .about-content .photo-presentation {
+  width: 50%;
+}
+
+#portfolio {
+  height: 200px;
+  background-color: #313131;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */

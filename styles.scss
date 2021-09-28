@@ -1,0 +1,161 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.header-top{
+    height: 9rem;
+    box-shadow: 0px 2px 0px -1px rgba(85, 85, 85, 0.24);
+    -webkit-box-shadow: 0px 2px 0px -1px rgba(21,21,21,0.24);
+    -moz-box-shadow: 0px 2px 0px -1px rgba(21,21,21,0.24);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    transition: all .5s ease;
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                padding: 1rem;
+                a{
+                    text-decoration: none;
+                    color: rgb(226, 222, 222);
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                    transition: all 0.3s ease;
+                    &:hover{
+                    color: #981CEB;
+                }
+                }
+            }
+        }
+    }
+}
+.header-scroll{
+    height: 8rem;
+    box-shadow: 0px 2px 0px -1px rgba(21,21,21,0.24);
+    -webkit-box-shadow: 0px 2px 0px -1px rgba(21,21,21,0.24);
+    -moz-box-shadow: 0px 2px 0px -1px rgba(21,21,21,0.24);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .6);
+    transition: all .5s ease ;
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        div{
+            display: flex;
+            align-items: center;
+            a{
+                font-size: 2.2rem;
+                text-decoration: none;
+                color: white;
+                transition: all 0.3s ease;
+                font-weight: bold;
+                &:hover{
+                    color: #981CEB;
+                }
+            }
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                padding: 1rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    transition: all 0.3s ease;
+                    &:hover{
+                    color: #981CEB;
+                }
+                }
+            }
+        }
+    }
+}
+
+
+#about{
+    background-image: url(https://images.pexels.com/photos/1980870/pexels-photo-1980870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    .about-content{
+        height: 1500px;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    padding: 9rem 3rem;
+    display: flex;
+    align-items: center;
+        .presentation{
+            width: 50%;
+            h1{
+                line-height: 8.7rem;
+                letter-spacing: 2px;
+                span{
+                    color: rgba(255, 255, 255,.6);
+                    font-size: 7rem;
+                    transition: all .5s ease;
+                    letter-spacing: 0rem;
+                    cursor:default;
+                    &:hover{
+                        color: #981CEB;
+                    }
+                }
+            }
+            button{
+                padding: 2rem;
+                background-color: transparent;
+                border:solid .5px rgba(34, 34, 34,.7);
+                color: rgba(255, 255, 255,.6);
+                font-size: 2rem;
+                transition: all .5s ease;
+                cursor: pointer;
+                &:hover{
+                    background-color: #981CEB;
+                }
+            }
+        }
+        .photo-presentation{
+            width: 50%;
+        }
+    }
+}
+
+#portfolio{
+    height: 200px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+}
